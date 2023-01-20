@@ -9,5 +9,7 @@ namespace HolyCS.Heaven
 
         public static implicit operator Passage(string v) => new Passage(v);
         public static implicit operator string(Passage v) => Text;
+
+        public Passage Replace(Passage old, Passage @new) => Text.Replace(old, @new);
     }
 }
